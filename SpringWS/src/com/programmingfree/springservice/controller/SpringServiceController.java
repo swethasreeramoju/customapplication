@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringServiceController {
 	@RequestMapping(value = "/{userName}/{password}", method = RequestMethod.GET)
 	public String getGreeting(@PathVariable String userName, @PathVariable String password) {
-		String result="Hello "+userName+"::::"+password;		
+		String result="Hello "+userName+":::::"+password;		
 		return result;   
 	}
 }
